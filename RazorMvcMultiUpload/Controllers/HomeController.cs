@@ -33,7 +33,7 @@ namespace RazorMvcMultiUpload.Controllers
         [Obsolete]
         public IActionResult Upload(IFormFile file, [FromServices] IHostingEnvironment ohostingEnvironment)
         {
-            string fileName = $"{ohostingEnvironment.WebRootPath}\\UploadedFiles\\{file.FileName}";
+            string fileName = $"{ohostingEnvironment.WebRootPath}//UploadFolder//{file.FileName}";
 
             using (FileStream fileStream = System.IO.File.Create(fileName))
             {
@@ -45,10 +45,10 @@ namespace RazorMvcMultiUpload.Controllers
 
 
             return View("Index");
-
             
+
         }
 
-      
+
     }
 }

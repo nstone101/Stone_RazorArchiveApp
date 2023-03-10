@@ -19,8 +19,10 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\UploadFolder\" />
+    <Content Remove="wwwroot\UploadedFiles\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\UploadFolder\" />
+    <Folder Include="wwwroot\UploadedFiles\" />
   </ItemGroup>
 </Project>

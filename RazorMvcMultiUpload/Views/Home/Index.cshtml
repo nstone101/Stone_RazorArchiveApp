@@ -4,52 +4,56 @@
 
 <div class="text-center">
     <h1 class="display-4">@ViewData["message"]</h1>
+</div>
+
+
     <div class="row">
-        <div = ="main">
+        <div id="main">
 
 
-            <div class="row">
-                <div class="mobile wrapper responsive-body">
+            <div class="col">
+                <div class="mobile wrapper centered responsive-body">
                     <header id="header" align="center" style="margin-top:5%; margin-left:5%; margin-right:auto; margin-bottom:1.5%;">
                         <h2 style="align-content: center; color:navy; font-weight:800;">Stone Family</h2>
                         <h3 style="align-content: center;">Digital Photo Upload Page </h3>
                     </header>
-                    <div class="row main">
-                        <div class="input-div col">
-                            <!--style="max-width:628px;" margin:0 auto; align="center"-->
-                            <div class="row">
-                                <div>
-                                    <p class="card col" style="margin: 10 auto; auto; align-content: center;">
-                                        Drag & drop photos you have of the5 Stone Family or of Thomas E Stone's life for his Celebration of Life celebration (tentatively going to be around the first week of March 2023 in Blue Ash OH most likely at the Rec. Center, Civil League, or Legionaires facilities perhaps. We haven't decided yet or figured out what's available) here or <br><br>
-                                    </p>
-                                </div>
-                                <div class="card col-3">
-                                    <p>
-                                        <strong>
-                                            When this is able to browse you will do so with a search box above. "No, it's not there currently, but will be shortly. Check back later or tomorrow.
-                                            You will this Browse using a sign up address. Which will be at the top right when that function is ready. This took me 5 minutes to throw together. So I beg the simplisticity I could make this work fast. I think it does. Just have to host it now. it's 845AM EST. Feb 11 2023. - Nick
-                                        </strong>
-                                    </p>
-                                    <br><br>
-                                </div>
+                </div>
+            </div>
+            <div class="col">
+                <section class="main py-3">
+                    <div class="input-div">
+                        <!--style="max-width:628px;" margin:0 auto; align="center"-->
+                        <div class="card">
+                            <div>
+                                <p class="card col-md-offset-2" style="margin: 10px auto; align-content: center;">
+                                    Drag & drop photos you have of the5 Stone Family or of Thomas E Stone's life for his Celebration of Life celebration (tentatively going to be around the first week of March 2023 in Blue Ash OH most likely at the Rec. Center, Civil League, or Legionaires facilities perhaps. We haven't decided yet or figured out what's available) here or <br><br>
+                                </p>
                             </div>
-                            <div class="row">
-                                <h3>Upload Images of Stone's and Tom E Stone (Uncle Tommy) Here. Thanks</h3>
-                            <div class="col">
-                                <form asp-controller="Home" asp-action="Upload" method="post" enctype="multipart/form-data">
-
-                                    <input type="file" name="file" multiple="multiple" accept="image/jpeg, image/png, image/jpg, image/tiff, vector/svg, image/svg, text/doc text/docx" />
-                                    <br /><br /><br /><br />
-
-                                    <button type="submit">Upload File(s)</button>
-
-
-                                    <p>Later on, I'll have this as an accessible library for everyone that wants to join it, add to it, curate it. I'd apprecaite it and I'll pay for the site to stay up and hosted for free without limits.</p>
-                                    <h4>Nickolas Stone</h4>
-                                    <label>Email:</label><span><a href="mailto:nstone101@gmail" style="text-decoration:none; color:black; font-weight:800;">Email me at my Company's Support Address</a> if there happen to be any issues, someone will resolve them asap and get back with you. In the meantime feel free to sign-up for an account above where it says  </span>
-
-
-                                </form>
-                            </div>
+                           
                         </div>
                     </div>
+                </section>
+                <div class="col">
+                    <section class="upload-section" align="center" style="width:100%;">
+
+                        <h5 align="center;">Upload Images:<br />Stone Family Photos for Archiving and for Uncle Tommy's Celebration of Life</h5>
+                        <div class="col-12 py-2">
+                            <form align="center" asp-controller="Home" asp-action="Upload" method="post" enctype="multipart/form-data">
+
+                                <input class="form-field input" type="file" name="file" multiple="multiple" accept="image/jpeg, image/png, image/jpg, image/tiff, vector/svg, image/svg, text/doc text/docx" />
+                                <br /><br /><br /><br />
+
+                                <button class="btn btn-primary" type="submit">Submit File(s)</button>
+                            </form>
+
+                        </div>
+                    </section>
+                    <div>
+                       
+                        <label>Support Email:</label>
+                        <span><a href="mailto:nstone101@gmail" style="text-decoration:none; color:black; font-weight:800;">Email me at my Company's Support Address</a> if there happen to be any issues, someone will resolve them asap and get back with you. In the meantime feel free to sign-up for an account above where it says  </span>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
